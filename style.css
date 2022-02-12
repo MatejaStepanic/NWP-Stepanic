@@ -1,0 +1,250 @@
+body, html {
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	font-size: 16px;
+}
+header {
+	display: block;
+	width: 100%;
+}
+.background {
+	background-image: url("img/owlogo.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 500px;
+	border-bottom: 7px solid #ccc;
+	border-top: 6px solid #ccc;
+}
+
+ul {
+
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: transparent;
+	
+}
+li {
+	display: inline-block;
+	text-align:center; 
+	list-style-position: inside;
+}
+li a {
+	display: block;
+	color: purple;
+	text-align: center;
+	padding: 14px 80px;
+	text-decoration: none;
+	
+}
+li a:hover {
+	background-color: #d9d0dd;
+}
+h1,h2 {
+	margin: 0.5em;
+	font-size: 2em;
+	text-align: center;
+	padding: 20px;
+}
+h2 {
+	font-size: 1.5em;
+	color: purple;
+}
+main a {
+	color: #27318b;
+	text-decoration: none;
+}
+main a:hover {
+	color: #8b3727;
+	text-decoration: underline;
+}
+p {
+	text-align: center;
+	margin: 1em;
+	line-height: 1.4em;
+	letter-spacing: 1px;
+}
+
+
+.news img {
+	width: 12%;
+	float: left;
+	padding: 0.5em;
+	margin: 0 1em 0.5em 0.5em;
+}
+.news h2 {
+	text-align: left;
+	margin: 0.5em;
+	font-size: 1.5em;
+	color: purple;
+}
+
+.news p {
+	text-align: left;
+}
+.news hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:grey;
+  height: 1px;
+}
+
+#news_gallery figure {
+	padding: 0.5em;
+	margin: 0 1em 0.5em 1em;
+	float: left;
+	width: 10%;
+	border: 1px solid black;
+}
+#news_gallery figcaption {
+	font-size: 90%;
+	text-align: center;
+}
+
+figure {
+	padding: 0.5em;
+	margin: 5 1em 0.5em 1em;
+	float: left;
+	width: 25%;
+	border: 3px solid #ccc;
+}
+figcaption {
+	font-size: 90%;
+}
+img {
+	width: 100%;
+}
+video {
+	margin: 0 1em 1em 1em;
+	float: left;
+	height: 600px;
+}
+#contact {
+	margin: 1em
+}
+form {
+	text-align: center;
+	margin: 0 auto; 
+	width:1000px;
+}
+map {
+	margin: 0 auto;
+	text-align: center
+}
+label {
+	display: block;
+}
+input[type=text], input[type=email], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 95%;
+
+}
+
+input[type=submit] {
+    display: block;
+	background-color: #c2c5cc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+	margin: 0 auto;
+    width: 200px;
+}
+
+input[type=submit]:hover {
+    background-color: #dfc9ef;
+}
+footer {
+	background-color: #ccc;
+	clear: both;
+	padding: 0.1em;
+
+}
+footer p {
+	color: white;
+	text-align: center;
+	margin: 0.3em;	
+}
+
+input[type=text], input[type=password] {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #fffff;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+}
+
+button:hover {
+
+	background-color:#dfc9ef;
+
+}
+
+
+.signinbtn {
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background-color: #c2c5cc;
+}
+
+.cancelbtn,.signupbtn {
+    margin: 0 auto;
+    width: 200px;
+    background-color: #c2c5cc;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 0;
+     padding: 0;
+     text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+	figure {
+		width: 90%;
+		margin: 1em;
+	}
+	.news img {
+		width: 95%;
+		padding: 0.5em;
+		margin: 0 1em 0.5em 0.5em;
+	}
+	.news time {
+		margin: 0 0 0 1em;
+	}
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
