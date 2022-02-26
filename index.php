@@ -1,56 +1,22 @@
-<?php 
-	# Stop Hacking attempt
-	define('__APP__', TRUE);
+<?php
 	
-	# Start session
-    session_start();
+	// loading dependencies
+	require_once("include/login_check.php");
+	require_once("include/check_permissions.php");
+	require_once("include/header.php");
 	
-	# Database connection
-	include ("db.php");
-	
-	# Variables MUST BE INTEGERS
-    if(isset($_GET['menu'])) { $menu   = (int)$_GET['menu']; }
-	if(isset($_GET['action'])) { $action   = (int)$_GET['action']; }
-	
-	# Variables MUST BE STRINGS A-Z
-    if(!isset($_POST['_action_']))  { $_POST['_action_'] = FALSE;  }
-	
-	if (!isset($menu)) { $menu = 1; }
-	
-	# Classes & Functions
-    include_once("functions.php");
+?>
 
-print '
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Overwatch</title>		
+		<title><?php echo APP_TITLE; ?></title>
 		<link rel="stylesheet" href="style.css">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-       	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-       	<meta name="description" content="Programiranje web aplikacija">
-       	<meta name="keywords" content="overwatch, game">
-       	<meta name="author" content="Mateja Stepanic"/>
-		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 		
 	</head>
-<body>
-	<header>
-	<nav>
-		<ul>
-			 <li><a href="index.php">Home</a></li>
-             <li><a href="news.php">News</a></li>
-             <li><a href="contact.php">Contact</a></li>
-             <li><a href="about-us.php">About</a></li>
-             <li><a href="gallery.php">Gallery</a></li>
-             <li><a href="signup.php">Sign up</a></li>
-             <li><a href="signin.php">Sign in</a></li>
-		</ul>
-	</nav>
+	<body>
+		<?php echo $header; ?>
 
-	<div class="background"></div>		
-	</header>
-	<main>
+		<main>
 	
 		<figure>
 			<img src="img/heroes.jpg" title="heroes">
@@ -73,7 +39,5 @@ print '
 		<p><p>&copy; MATEJA STEPANIC <a href="https://github.com/MatejaStepanic/NWP-Stepanic"><img src="img/github.png" title="Github" alt="Github" style="width:20px;height:20px;"></a></p></p>
 	</footer>
 
-</body>
+	</body>
 </html>
-';
-?>

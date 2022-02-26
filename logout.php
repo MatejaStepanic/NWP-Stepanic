@@ -1,16 +1,10 @@
 <?php
-	# Stop Hacking attempt
-    define('__APP__', TRUE);
-
-	# Start session
-	session_start();
+	// getting dependencies
+	require_once("include/login_check.php");
 	
+	// destroying session
+	session_destroy();
 	
-	unset($_POST);
-	unset($_SESSION['user']);
-
-	$_SESSION['user']['valid'] = 'false';
-	$_SESSION['message'] = '<p>See you again soon!</p>';
-	
-	header("Location: index.php");
-	exit;
+	// redirecting to login.php
+	header("Location: " . URL . "login.php");
+?>

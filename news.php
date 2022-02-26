@@ -1,34 +1,21 @@
 <?php
-print '
-<!DOCTYPE.php>
-	<head>
-		<title>Overwatch</title>		
-		<link rel="stylesheet" href="style.css">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-       	<meta http-equiv="content-type" content="text.php; charset=UTF-8">
-       	<meta name="description" content="Programiranje web aplikacija">
-       	<meta name="keywords" content="overwatch, game">
-       	<meta name="author" content="Mateja Stepanic"/>
-		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 		
-	</head>
-<body>
-	<header>
-	<div class="background" style="height: 200px;"></div>
-	<nav>
-		<ul>
-			<li><a href="index.php">Home</a></li>
-             <li><a href="news.php">News</a></li>
-             <li><a href="contact.php">Contact</a></li>
-             <li><a href="about-us.php">About</a></li>
-             <li><a href="gallery.php">Gallery</a></li>
-             <li><a href="signup.php">Sign up</a></li>
-             <li><a href="signin.php">Sign in</a></li>
-             <li><a href="logout.php">Log out</a></li>
-		</ul>
-	</nav>
-	</header>
+
+require_once("include/login_check.php");
+require_once("include/header.php");
+require_once("include/db.php");
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>News</title>
+	<link rel="stylesheet" href="style.css">
+</head>
 	<main>
+		<body>
+			<?php echo $header; ?>
 		<h1>News</h1>
 		<hr>
 		<div class="news">
@@ -63,6 +50,4 @@ print '
 		<p>&copy; MATEJA STEPANIC <a href="https://github.com/MatejaStepanic/NWP-Stepanic"><img src="img/github.png" title="Github" alt="Github" style="width:20px;height:20px;"></a></p>
 	</footer>
 </body>
-<.php>
-';
-?>
+</html>

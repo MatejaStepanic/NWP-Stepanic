@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<Games>
+	<Game>
+		<Name>Overwatch</Name>
+		<Genre>Multiplayer FPS</Genre>
+		<Year>2015</Year>
+	</Game>
+	<Game>
+		<Name>Horizon Zero Dawn</Name>
+		<Genre>Singleplayer RPG</Genre>
+		<Year>2022</Year>
+	</Game>
+	<Game>
+		<Name>Starcraft</Name>
+		<Genre>Strategy</Genre>
+		<Year>1998</Year>
+	</Game>
+	<Game>
+		<Name>test</Name>
+		<Genre>test-Genre</Genre>
+		<Year>1001</Year>
+	</Game>
+</Games>

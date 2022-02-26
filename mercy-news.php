@@ -1,35 +1,21 @@
 <?php
-print '
+
+require_once("include/login_check.php");
+require_once("include/header.php");
+require_once("include/db.php");
+?>
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Overwatch</title>		
-		<link rel="stylesheet" href="style.css">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-       	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-       	<meta name="description" content="Programiranje web aplikacija">
-       	<meta name="keywords" content="overwatch, game">
-       	<meta name="author" content="Mateja Stepanic"/>
-		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 		
-	</head>
-<body>
-	<header>
-	<div class="background" style="height: 200px;"></div>
-	<nav>
-		<ul>
-			 <li><a href="index.php">Home</a></li>
-             <li><a href="news.php">News</a></li>
-             <li><a href="contact.php">Contact</a></li>
-             <li><a href="about-us.php">About</a></li>
-             <li><a href="gallery.php">Gallery</a></li>
-             <li><a href="signup.php">Sign up</a></li>
-             <li><a href="signin.php">Sign in</a></li>
-             <li><a href="logout.php">Log out</a></li>
-		</ul>
-	</nav>
-	</header>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>News</title>
+	<link rel="stylesheet" href="style.css">
+</head>
 	<main>
+		<body>
+			<?php echo $header; ?>
 	<div class="news">
 	<h1>TAKE FLIGHT IN MERCYS RECALL CHALLENGE!</h1>
 	<hr>
@@ -51,5 +37,3 @@ print '
 
 </body>
 </html>
-';
-?>

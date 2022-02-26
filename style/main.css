@@ -1,0 +1,53 @@
+#login_form{
+	background-color: #5882FA;
+	padding: 35px;
+	width: 250px;
+	margin: auto;
+}
+
+#login_button{
+	margin: 15px;
+	padding: 2 5px;
+}
+
+#main_header{
+	background-color: #5882FA;
+	padding: 2px 0;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#main_menu{
+	background-color: #2E64FE;
+	padding: 2px 15px;
+	overflow: hidden;
+	font-color: white;
+}
+
+#main_menu_left{
+	float: left;
+}
+
+#main_menu_right{
+	float: right;
+}
+
+#main_menu a, #logged_in_text{
+	color: white;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+#show_data {
+	margin-bottom: 15px;
+}
+
+#show_data table, #show_data th, #show_data td{
+	border: 1px solid blue;
+	padding: 5px;
+	text-align: center;
+}
+
+#show_data table {
+	border-collapse: collapse;
+}
